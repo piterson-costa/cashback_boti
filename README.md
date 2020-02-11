@@ -19,7 +19,7 @@ suas compras e acompanhar o retorno de cashback de cada um.
 - Virtualenv
 
 1) Na raiz do projeto, rode o comando `docker-compose up --build` para buildar o docker com o mongoDB
-2) Na raiz do projeto, rode o shell script `./start.sh`. para fazer as instalações das dependecias e startar o flask
+2) Na raiz do projeto, rode o shell script `./start.sh`. para fazer as instalações das dependecias e startar o flask (caso ouver necessidade rodar o comando `chmod 775 ./start.sh` para liberar permissão sudo)
 
 # Rotas
 * [Json Postman](boticario.postman_collection.json) - usar para importar no postman
