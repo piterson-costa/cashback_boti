@@ -52,6 +52,11 @@ O método **POST** é usado para criar novos dealers.
 O método **GET** retorna o token JWT que deve ser usado no header das proximas rotas (Authorization : 'token_jwt')
 ##### Retorno: JSON 
 ##### Authorization JWT: False 	
+##### corpo requisição Exemplo
+	{
+	   "cpf": <Somente numero>,
+           "senha": <senha>
+	}
 
 ---------
 
@@ -69,7 +74,7 @@ O método **DELETE** deleta a sale informada no campo json
 ##### Retorno: JSON 
 ##### Authorization JWT: True 
 ##### corpo requisição Exemplo:
-	{
+    {
         "codigo": <Somente numero>,
         "venda_cpf": <Somente numero>
     }
