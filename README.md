@@ -13,6 +13,7 @@ suas compras e acompanhar o retorno de cashback de cada um.
 
 
 ## Pré-requisitos:
+- Ambiente Linux 
 - Python 3.6
 - Docker
 - Virtualenv
@@ -47,6 +48,19 @@ O método **POST** é usado para criar novos dealers.
 	
 ---------
 
+## Endpoint: /login
+##### Método = ['GET']
+O método **GET** retorna o token JWT que deve ser usado no header das proximas rotas (Authorization : 'token_jwt')
+##### Retorno: JSON 
+##### Authorization JWT: False 	
+##### corpo requisição Exemplo
+	{
+	   "cpf": <Somente numero>,
+           "senha": <senha>
+	}
+
+---------
+
 ## Endpoint: /sales
 ##### Método = ['GET']
 O método **GET** retorna uma lista com todos as sales cadastradas 
@@ -61,7 +75,7 @@ O método **DELETE** deleta a sale informada no campo json
 ##### Retorno: JSON 
 ##### Authorization JWT: True 
 ##### corpo requisição Exemplo:
-	{
+    {
         "codigo": <Somente numero>,
         "venda_cpf": <Somente numero>
     }
