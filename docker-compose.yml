@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  mongodb-dev:
+    image: bitnami/mongodb:latest
+    container_name: mongodb-dev
+    ports:
+    - 27018:27017
+
+volumes:
+  cache_journal:
+    driver: local
