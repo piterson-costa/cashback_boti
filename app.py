@@ -50,7 +50,7 @@ def sales_delete():
         return error
 
 
-@app.route('/sales_update', methods=['POST'])
+@app.route('/sales_create', methods=['POST'])
 @validar_jwt
 def sales_create():
     error = lib.valid_json_load(request, {'codigo', 'valor', 'data', 'venda_cpf'})
@@ -60,7 +60,7 @@ def sales_create():
         return error
 
 
-@app.route('/sales', methods=['PUT'])
+@app.route('/sales_update', methods=['PUT'])
 @validar_jwt
 def sales_update():
     error = lib.valid_json_load(request, {'codigo', 'venda_cpf', 'campos_put'})
