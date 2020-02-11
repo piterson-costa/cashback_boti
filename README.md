@@ -13,6 +13,7 @@ suas compras e acompanhar o retorno de cashback de cada um.
 
 
 ## Pré-requisitos:
+- Ambiente Linux 
 - Python 3.6
 - Docker
 - Virtualenv
