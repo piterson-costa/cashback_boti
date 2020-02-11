@@ -47,6 +47,14 @@ O método **POST** é usado para criar novos dealers.
 	
 ---------
 
+## Endpoint: /login
+##### Método = ['GET']
+O método **GET** retorna o token JWT que deve ser usado no header das proximas rotas (Authorization : 'token_jwt')
+##### Retorno: JSON 
+##### Authorization JWT: False 	
+
+---------
+
 ## Endpoint: /sales
 ##### Método = ['GET']
 O método **GET** retorna uma lista com todos as sales cadastradas 
